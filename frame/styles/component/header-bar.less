@@ -1,0 +1,59 @@
+.zh-header-bar {
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .zh-header-bar_left {
+    display: flex;
+    flex: 1;
+    height: 100%;
+
+    .zh-header-bar_logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 28px;
+      }
+
+      h1 {
+        color: @colors[primary];
+        font-size: @size[large];
+      }
+    }
+
+    .zh-header-bar_menu {
+      flex: 1;
+      display: flex;
+      color: @colors[white];
+      font-size: @size[small];
+
+      .ant-tabs-nav {
+        margin-bottom: 0;
+
+        &::before {
+          border: none;
+        }
+      }
+
+      .ant-tabs-content-holder {
+        display: none;
+      }
+    }
+  }
+
+  .zh-header-bar_right {
+    color: @colors[white];
+    height: 100%;
+
+    .zh-tool {
+      display: flex;
+
+      .zh-tool-cell {
+        margin-left: 12px;
+      }
+    }
+  }
+}
