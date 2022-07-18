@@ -24,8 +24,7 @@
       "@router": ["frame/router"],
       "@types/*": ["frame/types/*"],
       "@component/*": ["frame/component/*"],
-      "@layout/*": ["frame/layout/*"],
-      "@atom/*": ["atom/*"]
+      "@layout/*": ["frame/layout/*"]
     }
   },
   "include": ["frame/**/*.ts", "frame/**/*.tsx"],
