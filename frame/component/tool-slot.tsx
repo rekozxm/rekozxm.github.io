@@ -1,17 +1,21 @@
-import { BugOutlined, CommentOutlined } from '@ant-design/icons'
-import { Tooltip } from 'antd'
+import { GithubOutlined, WechatOutlined } from '@ant-design/icons'
 const ToolSlot = () => {
   return (
-    <div className="zh-tool">
-      <div className="zh-tool-cell">
-        <Tooltip title={<>Theme</>}>
-          <BugOutlined />
-        </Tooltip>
+    <div className="r-tool">
+      <div className="r-tool-cell">
+        <GithubOutlined />
+        <a
+          className="ml6 r-tool-cell_txt"
+          href="https://github.com/rekozxm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          rekozxm
+        </a>
       </div>
-      <div className="zh-tool-cell">
-        <Tooltip title={<>Wechat</>}>
-          <CommentOutlined />
-        </Tooltip>
+      <div className="ml12 r-tool-cell">
+        <WechatOutlined />
+        <span className="ml6 r-tool-cell_txt">13266701191</span>
       </div>
     </div>
   )
