@@ -7,7 +7,7 @@ const route: RouteObject[] = [
     element: <MainWrap />
   },
   {
-    path: '/chuszzh',
+    path: '/reko',
     element: <MainWrap />
   }
 ]
