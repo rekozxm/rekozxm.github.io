@@ -5,7 +5,7 @@ import FooterBar from '@component/footer-bar'
 import ToolSlot from '@component/tool-slot'
 const { Content } = Layout
 
-const LoginDom = () => {
+const MainDom = () => {
   return (
     <Layout className="app r">
       <HeaderBar funcSlot={<ToolSlot></ToolSlot>}></HeaderBar>
@@ -15,4 +15,4 @@ const LoginDom = () => {
   )
 }
 
-export default LoginDom
+export default MainDom
