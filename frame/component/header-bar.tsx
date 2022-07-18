@@ -7,7 +7,7 @@ interface HeaderProps {
 const HeaderBar = (props: HeaderProps) => {
   return (
     <>
-      <div className="r-header-bar pl16 pr16">
+      <header className="r-header-bar pl16 pr16">
         <div className="r-header-bar_left">
           <div className="r-header-bar_logo">
             <img className="logo" src={FacIcon} alt="logo" />
@@ -15,7 +15,7 @@ const HeaderBar = (props: HeaderProps) => {
           </div>
         </div>
         <div className="r-header-bar_right">{props.funcSlot}</div>
-      </div>
+      </header>
     </>
   )
 }
