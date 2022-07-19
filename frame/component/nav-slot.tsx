@@ -1,8 +1,10 @@
 import _ from 'lodash'
 import { useEffect } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 const NavList = () => {
   const navigate = useNavigate()
+  const location = useLocation()
+
   const navItems = [
     { label: '关于我', key: '1', path: '/about' },
     { label: '工作经历', key: '2', path: '/work' },
@@ -11,7 +13,9 @@ const NavList = () => {
     { label: '能力评估', key: '5', path: '/ability' },
   ]
   useEffect(() => {
-    navigate('/about')
+    if (location.pathname === '/') {
+      navigate('/about')
+    }
   }, [])
 
   return (
