@@ -11,7 +11,7 @@ export default defineConfig({
       '@router': path.resolve(__dirname, './frame/router'),
       '@types': path.resolve(__dirname, './frame/types'),
       '@component': path.resolve(__dirname, './frame/component'),
-      '@layout': path.resolve(__dirname, './frame/layout')
+      '@container': path.resolve(__dirname, './frame/container')
     }
   },
   css,
