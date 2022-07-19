@@ -4,12 +4,14 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const NavList = () => {
   const navigate = useNavigate()
   const navItems = [
-    { label: '简历', key: '1', path: '/resume' },
-    { label: '个人', key: '2', path: '/person' },
+    { label: '关于我', key: '1', path: '/about' },
+    { label: '工作经历', key: '2', path: '/work' },
+    { label: '项目经验', key: '3', path: '/project' },
+    { label: '教育背景', key: '4', path: '/education' },
+    { label: '能力评估', key: '5', path: '/ability' },
   ]
-  // 初始化跳转到第一个目录
   useEffect(() => {
-    navigate('/resume')
+    navigate('/about')
   }, [])
 
   return (

@@ -1,7 +1,10 @@
 import { RouteObject } from 'react-router-dom'
 import HomeWrapper from '@container'
-import ResumeWrap from '@container/resume'
-import PersonWrap from '@container/person'
+import AboutWrap from '@container/about'
+import WorkWrap from '@container/work'
+import ProjectWrap from '@container/project'
+import EducationWrap from '@container/education'
+import AbilityWrap from '@container/ability'
 
 const route: RouteObject[] = [
   {
@@ -9,15 +12,26 @@ const route: RouteObject[] = [
     element: <HomeWrapper></HomeWrapper>,
     children: [
       {
-        path: 'resume',
-        element: <ResumeWrap />,
+        path: 'about',
+        element: <AboutWrap />
       },
       {
-        path: 'person',
-        element: <PersonWrap />,
+        path: 'work',
+        element: <WorkWrap />
+      },
+      {
+        path: 'project',
+        element: <ProjectWrap />
+      },
+      {
+        path: 'education',
+        element: <EducationWrap />
+      },
+      {
+        path: 'ability',
+        element: <AbilityWrap />
       }
     ]
-  },
-
+  }
 ]
 export default route

@@ -1,7 +1,7 @@
 
 const MainDom = () => {
   return (
-    <div>222</div>
+    <div>我的技能模块</div>
   )
 }
 
