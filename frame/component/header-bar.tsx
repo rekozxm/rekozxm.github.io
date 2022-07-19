@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import FacIcon from '@assets/favicon.svg'
 interface HeaderProps {
+  navSlot?: ReactNode
   funcSlot?: ReactNode
 }
 
@@ -13,6 +14,9 @@ const HeaderBar = (props: HeaderProps) => {
             <img className="logo" src={FacIcon} alt="logo" />
             <span className="ml8 name">张满意</span>
           </div>
+          {
+            props.navSlot
+          }
         </div>
         <div className="r-header-bar_right">{props.funcSlot}</div>
       </header>

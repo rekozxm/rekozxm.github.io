@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to right, #00c6fb, #1d66db);
+
   .r-header-bar_left {
     display: flex;
     flex: 1;
@@ -17,9 +18,28 @@
       .logo {
         height: 24px;
       }
+
       .name {
         color: @colors[white];
         font-size: @size[default];
+      }
+    }
+
+    .r-header-bar_nav {
+      color: @colors[white];
+
+      .r-header-bar_nav_item {
+
+        &.active,
+        &:hover {
+          color: @colors[primary];
+
+        }
+
+        &+.r-header-bar_nav_item {
+          margin-left: 8px;
+
+        }
       }
     }
   }
@@ -34,8 +54,9 @@
       .r-tool-cell {
         .r-tool-cell_txt {
           cursor: pointer;
+
           &:hover {
-            color: @colors[main];
+            color: @colors[primary];
           }
         }
       }

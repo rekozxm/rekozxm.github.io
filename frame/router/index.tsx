@@ -1,14 +1,23 @@
 import { RouteObject } from 'react-router-dom'
-import MainWrap from '@layout/main'
+import HomeWrapper from '@container'
+import ResumeWrap from '@container/resume'
+import PersonWrap from '@container/person'
 
 const route: RouteObject[] = [
   {
     path: '/',
-    element: <MainWrap />
+    element: <HomeWrapper></HomeWrapper>,
+    children: [
+      {
+        path: 'resume',
+        element: <ResumeWrap />,
+      },
+      {
+        path: 'person',
+        element: <PersonWrap />,
+      }
+    ]
   },
-  {
-    path: '/reko',
-    element: <MainWrap />
-  }
+
 ]
 export default route
