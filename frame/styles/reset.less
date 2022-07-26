@@ -88,7 +88,7 @@ ul {
   flex: 1;
 }
 
-.space(@i) when(@i <=32) {
+.space(@i) when(@i <=180) {
   .pl@{i} {
     padding-left: @i + 0px;
   }
@@ -108,7 +108,14 @@ ul {
   .pd@{i} {
     padding: @i + 0px;
   }
-
+  .pdh@{i} {
+    padding-left: @i + 0px;
+    padding-right: @i + 0px;
+  }
+  .pdv@{i} {
+    padding-top: @i + 0px;
+    padding-bottom: @i + 0px;
+  }
   .ml@{i} {
     margin-left: @i + 0px;
   }

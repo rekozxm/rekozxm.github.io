@@ -3,8 +3,6 @@ import HomeWrapper from '@container'
 import AboutWrap from '@container/about'
 import WorkWrap from '@container/work'
 import ProjectWrap from '@container/project'
-import EducationWrap from '@container/education'
-import AbilityWrap from '@container/ability'
 
 const route: RouteObject[] = [
   {
@@ -23,14 +21,6 @@ const route: RouteObject[] = [
         path: 'project',
         element: <ProjectWrap />
       },
-      {
-        path: 'education',
-        element: <EducationWrap />
-      },
-      {
-        path: 'ability',
-        element: <AbilityWrap />
-      }
     ]
   }
 ]

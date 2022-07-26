@@ -8,9 +8,7 @@ const NavList = () => {
   const navItems = [
     { label: '关于我', key: '1', path: '/about' },
     { label: '工作经历', key: '2', path: '/work' },
-    { label: '项目经验', key: '3', path: '/project' },
-    { label: '教育背景', key: '4', path: '/education' },
-    { label: '能力评估', key: '5', path: '/ability' },
+    { label: '项目案例', key: '3', path: '/project' },
   ]
   useEffect(() => {
     if (location.pathname === '/') {
